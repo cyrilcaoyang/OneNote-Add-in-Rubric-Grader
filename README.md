@@ -38,9 +38,9 @@ The add-in helps teachers grade writing assignments based on a grading rubric.
 
 2. Open a **cmd** prompt and navigate to the **onenote add-in** folder. Run the `yo office` command as shown below.
 
-   ```
+   `
 C:\your-local-path\onenote add-in\> yo office
-   ```
+   `
    >These instructions use the Windows command prompt, but are equally applicable for other shell environments. 
 
 3. Use the following options to create the project.
@@ -57,18 +57,18 @@ C:\your-local-path\onenote add-in\> yo office
 
 4. After the project is created, run `gulp serve-static` in the **cmd** prompt as shown below. This will start the Gulp web server.
 
-   ```
+   `
 C:\your-local-path\onenote add-in\> gulp serve-static
-   ```
+   `
    The server is available when you see the `Finished 'serve-static' ...` entry in the window. Keep this window open while you're running the add-in.
 
 5. Install the Gulp web server's self-signed certificate as a trusted certificate. You only need to do this one time on your computer for add-in projects created with the Yeoman Office generator.  
 
    a. In a browser, navigate to the hosted add-in page. By default, this is the same URL that's in your manifest:
 
-   ```
+   `
 https://localhost:8443/app/home/home.html
-   ```
+   `
 
    b. Install the certificate as a trusted certificate. For more information, see [Adding Self-Signed Certificates as Trusted Root Certificate](https://github.com/OfficeDev/generator-office/blob/master/docs/trust-self-signed-cert.md).
 
@@ -81,15 +81,15 @@ https://localhost:8443/app/home/home.html
 
    a. Add the following line to the **Hosts** section. This specifies that your add-in supports the OneNote host application.
 
-   ```
+   `
 <Host Name="Notebook" />
-   ```
+   `
 
    b. In the **DefaultSettings** section, change the **SourceLocation** element from  `home.html` to `grader.html`, as shown below.
 
-   ```
+   `
 <SourceLocation DefaultValue="https://localhost:8443/app/home/grader.html"/>
-   ```
+   `
 
 ## Step 4: Run the add-in 
 1. In OneNote Online, open a notebook that contains a couple of pages. Make sure at least one page has a paragraph of content.
