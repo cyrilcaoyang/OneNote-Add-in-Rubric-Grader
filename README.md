@@ -82,13 +82,13 @@ https://localhost:8443/app/home/home.html
    a. Add the following line to the **Hosts** section. This specifies that your add-in supports the OneNote host application.
 
    `
-<Host Name="Notebook" />
+        <Host Name="Notebook" />
    `
 
    b. In the **DefaultSettings** section, change the **SourceLocation** element from  `home.html` to `grader.html`, as shown below.
 
    `
-<SourceLocation DefaultValue="https://localhost:8443/app/home/grader.html"/>
+        <SourceLocation DefaultValue="https://localhost:8443/app/home/grader.html"/>
    `
 
 ## Step 4: Run the add-in 
@@ -99,9 +99,8 @@ https://localhost:8443/app/home/home.html
 2. Choose **Insert > Office Add-ins**. This opens the Office Add-ins dialog. 
   - If you're logged in with your work or school account, choose the **MY ORGANIZATION** tab, and then choose  **Upload My Add-in**.
   - If you're logged in with your consumer account, choose the **MY ADD-INS** tab, and then choose  **Upload My Add-in**. (In some cases, you might need to choose **Manage My Add-ins > Upload My Add-in**.)
-  
 
-  >To enable the **Office Add-ins** button, click inside the OneNote page.
+    >To enable the **Office Add-ins** button, click inside the OneNote page.
 
 3. In the Upload Add-in dialog, browse to **manifest-onenote-add-in.xml** that you modified in your project files, and then choose **Upload**. While testing, your manifest file can be stored locally.
 
